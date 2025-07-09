@@ -57,8 +57,7 @@ const questions = [
     },
 ];
 
-
-const htmlques = document.getElementById('ques');
+   const htmlques = document.getElementById('ques');
 const htmlopt1 = document.getElementById('opt1');
 const htmlopt2 = document.getElementById('opt2');
 const htmlopt3 = document.getElementById('opt3');
@@ -95,7 +94,7 @@ function nextQuestion() {
     let selectedOption = '';
     for (let i = 0; i < inputs.length; i++) {
         if (inputs[i].checked) {
-            selectedOption = document.getElementById(`opt${i + 1}`).innerText;
+            selectedOption = document.getElementById(`opt${i + 1}).innerText`);
         }
         inputs[i].checked = false;
     }
@@ -143,3 +142,5 @@ function resetQuiz() {
 
 showQuestion();
 startTimer();
+
+
